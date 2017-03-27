@@ -1,11 +1,16 @@
+schema {
+  query: Query
+  mutation: Mutation
+}
+
 input AddToScheduleInput {
   sessionId: ID!
-  clientMutationId: String!
+  clientMutationId: String
 }
 
 type AddToSchedulePayload {
   session: Session
-  clientMutationId: String!
+  clientMutationId: String
 }
 
 type Config {

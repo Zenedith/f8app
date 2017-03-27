@@ -26,7 +26,6 @@
 #import "AppDelegate.h"
 
 #import "RCTRootView.h"
-#import "RCTPushNotificationManager.h"
 
 @implementation AppDelegate
 
@@ -77,21 +76,6 @@
                                                         openURL:url
                                               sourceApplication:sourceApplication
                                                      annotation:annotation];
-}
-
-- (void)application:(UIApplication *)application didRegisterUserNotificationSettings:(UIUserNotificationSettings *)notificationSettings
-{
-  [RCTPushNotificationManager didRegisterUserNotificationSettings:notificationSettings];
-}
-
-- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken
-{
-  [RCTPushNotificationManager didRegisterForRemoteNotificationsWithDeviceToken:deviceToken];
-}
-
-- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)notification
-{
-  [RCTPushNotificationManager didReceiveRemoteNotification:notification];
 }
 
 @end

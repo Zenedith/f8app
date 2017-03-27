@@ -26,7 +26,7 @@
 
 module.exports = {
   testMenuEnabled: true,
-  serverURL: 'http://localhost:8080',
+  serverURL: 'http://172.16.0.100:8080',
   version: 323,
   fontFamily: undefined,
 };

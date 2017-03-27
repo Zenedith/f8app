@@ -24,6 +24,6 @@ DEST="$CONFIGURATION_BUILD_DIR/$UNLOCALIZED_RESOURCES_FOLDER_PATH"
 
 if [[ "$CONFIGURATION" = "Debug" ]]; then
   if [[ "$PLATFORM_NAME" != "iphonesimulator" ]]; then
-    ipconfig getifaddr en0 > "$DEST/ip.txt"
+    ipconfig getifaddr en1 > "$DEST/ip.txt"
   fi
 fi
